@@ -2,22 +2,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-video',
-  template: `
-    <div class="videoDiv">
-      <h1>{{title}}</h1>
-      <h3>{{desc}}</h3>
-      <a [href]="url">Click Here To Watch Video</a><br><br>
-      <button (click)="onEditVideoClick()">Edit Video</button>
-    </div>
-    `,
-  styles: [`
-    .videoDiv{
-      border : 1px solid black;
-      margin : 25px;
-      width : 300px;
-      padding : 10px;
-    }
-  `]
+  templateUrl : './video.component.html',
+  styleUrls: ['./video.component.css']
 })
 export class VideoComponent {
 
