@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
           <button mat-button (click)="test2btnclick()">Test2</button>
           <button mat-button (click)="materialbtnClick()">Material Page</button>
       </mat-toolbar><br><br>
-  <router-outlet></router-outlet>
+  <router-outlet></router-outlet><br><br>
   <!-- <app-test></app-test> <hr>
   <app-test2></app-test2><br><br><hr>
   <h1>Our YouTube Videos</h1>
