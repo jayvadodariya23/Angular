@@ -12,6 +12,7 @@ import { MaterialuiComponent } from './materialui/materialui.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
+import { DirectiveComponent } from './directive/directive.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatInputModule } from '@angular/material/input';
     TestComponent,
     Test2Component,
     VideoComponent,
-    MaterialuiComponent
+    MaterialuiComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,

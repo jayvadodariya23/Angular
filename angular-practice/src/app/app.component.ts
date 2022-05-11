@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
           <button mat-button style="margin-left : 30px" (click)="testbtnclick()">Test</button>
           <button mat-button (click)="test2btnclick()">Test2</button>
           <button mat-button (click)="materialbtnClick()">Material Page</button>
+          <button mat-button (click)="directivebtnClick()">Directive</button>
       </mat-toolbar><br><br>
   <router-outlet></router-outlet>
   <!-- <app-test></app-test> <hr>
@@ -42,6 +43,10 @@ export class AppComponent {
 
   materialbtnClick = () => {
     this.router.navigate(['materialUI']);    
+  }
+
+  directivebtnClick = () => {
+    this.router.navigate(['directive']);
   }
 
 }

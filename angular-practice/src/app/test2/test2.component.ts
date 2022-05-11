@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `<h3>Welcome! {{userName}} With Userid : {{userId}} And This userName is loaded With Function : {{getUserName()}}</h3>
               <button (click)="toggleButton()" [disabled]="isDisabledButton">{{isDisabledButton ? "Enable Me" : "Disable Me"}}</button>
               <button (click)="enableButton()" *ngIf="isDisabledButton">{{"Enable Button"}}</button> <br><br>
-              <input (input)="setUserName($event)" placeholder="Enter User Name"/> <br><br>
+              <input (input)="setUserName($event)" placeholder="Enter User Name" /> <br><br>
               <button (click)="saveUser()">Save User</button>
               {{"Your Name is :" + displayName }} <br>
               <h3> Two Way Data Binding Example</h3>
