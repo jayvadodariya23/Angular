@@ -17,6 +17,8 @@ import { StudentComponent } from './students-list/student/student.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StudentMasterComponent } from './student-master/student-master.component';
 import { AddStudentModalComponent } from './students-list/add-student-modal/add-student-modal.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,8 @@ import { AddStudentModalComponent } from './students-list/add-student-modal/add-
     MatButtonModule,
     MatToolbarModule,
     MatInputModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

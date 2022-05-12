@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {student} from './student/student';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-students-list',
@@ -7,6 +8,12 @@ import {student} from './student/student';
   styleUrls: ['./students-list.component.css']
 })
 export class StudentsListComponent {
+
+  constructor(private userservice : UserService){
+    let a = userservice.getConfig();
+    console.log(a);
+  }
+
   students  =[ 
     { name : 'Jay', std : 12, age : 22, city : 'Gondal' },
     { name : 'Gaurav', std : 11, age : 23, city : 'Rajkot' },

@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { AddStudentModalComponent } from '../students-list/add-student-modal/add-student-modal.component';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-student-master',
@@ -11,7 +12,8 @@ import { AddStudentModalComponent } from '../students-list/add-student-modal/add
 export class StudentMasterComponent  {
 
   display = "none";
-  constructor(private router:Router,private modalService: NgbModal){
+  data:any = [];
+  constructor(private router:Router,private modalService: NgbModal, private userService : UserService){
     
   }
   showStudentList = () => {
@@ -28,6 +30,15 @@ export class StudentMasterComponent  {
   }
   onCloseHandled() {
     this.display = "none";
+  }
+
+  getData = () => {
+    this.userService.getConfig().subscribe((response)=>{
+      this.data = response;
+      console.log(this.data);
+    },(error=>{
+
+    }));
   }
 
 }
