@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {student} from './student';
+import { user } from './user';
 
 
 @Component({
@@ -10,7 +11,5 @@ import {student} from './student';
 export class StudentComponent{
 
   @Input() stud : student;
-
-
-
+  @Input() user : user;
 }

@@ -1,5 +1,5 @@
 
-
+<div @fade>
 <h3>Welcome! {{userName}} With Userid : {{userId}} And This userName is loaded With Function : {{getUserName()}}</h3>
 <button (click)="toggleButton()" [disabled]="isDisabledButton">{{isDisabledButton ? "Enable Me" : "Disable Me"}}</button>
 <button (click)="enableButton()" *ngIf="isDisabledButton">{{"Enable Button"}}</button> <br><br>
@@ -9,3 +9,4 @@
 <h3> Two Way Data Binding Example</h3>
 <input [(ngModel)]="twowayVariable" placeholder="Two Way Data Binding Example"/>
 {{"Two Way : " + twowayVariable}}
+</div>

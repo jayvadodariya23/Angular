@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { fade } from '../animation';
 
 @Component({
   selector: 'app-test2',
   templateUrl: './test2.component.html',
-  styleUrls: ['./test2.component.css']
+  styleUrls: ['./test2.component.css'],
+  animations : [fade]
 })
 export class Test2Component {
 

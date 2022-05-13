@@ -1,10 +1,17 @@
-
+<div @fade>
 <button type="submit" class="btn btn-primary" style="margin: 50px;" (click)="showStudentList()">StudentList</button>
 <button class="btn btn-outline-primary" style="margin: 50px;"  (click)="open()">Open NgBoostrap Modal</button>
 
 <button type="button" class="btn btn-info" style="margin: 50px;"  (click)="openModal()">Open Bootstrap Modal</button>
 
-<button type="button" class="btn btn-info" style="margin: 50px;"  (click)="getData()">Open Bootstrap Modal</button>
+<button type="button" class="btn btn-info" style="margin: 50px;"  (click)="getData()">Get User</button>
+
+<button type="button" class="btn btn-info" style="margin: 50px;"  (click)="createUser()">Create User</button>
+
+<button type="button" class="btn btn-info" style="margin: 50px;"  (click)="updateUser()">Update User</button>
+
+<button type="button" class="btn btn-info" style="margin: 50px;"  (click)="deleteUser()">Delete User</button>
+
 
 <router-outlet></router-outlet>
 
@@ -24,4 +31,5 @@
                          </div>
             </div>
              </div>
- </div>
+      </div>
+</div>

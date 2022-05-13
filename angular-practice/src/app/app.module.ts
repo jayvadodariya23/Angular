@@ -18,6 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StudentMasterComponent } from './student-master/student-master.component';
 import { AddStudentModalComponent } from './students-list/add-student-modal/add-student-modal.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpService } from './services/http.service';
+import { UserService } from './services/user.service';
+// import { GeneralHelper } from './General/general-helper';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [HttpService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
